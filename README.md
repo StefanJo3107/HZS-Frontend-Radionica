@@ -1,2 +1,3 @@
 # HZS Frontend Radionica
- Materijal sa prvog i treceg dana HZS radionica
+
+Materijal sa prva tri dana HZS radionica
