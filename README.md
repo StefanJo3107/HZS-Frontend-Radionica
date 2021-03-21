@@ -1,3 +1,3 @@
 # HZS Radionica
 
-Materijal sa prva tri dana HZS radionica
+Materijal sa sva cetiri dana HZS radionica
