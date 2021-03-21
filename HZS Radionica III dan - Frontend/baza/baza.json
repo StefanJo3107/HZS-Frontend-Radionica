@@ -1,0 +1,40 @@
+{
+  "timovi": [
+    {
+      "ime": "Hakeri",
+      "clanovi": [
+        {
+          "ime": "Mateja",
+          "prezime": "Ivanovic",
+          "mail": "mi@gmail.com",
+          "skola": "XIII beogradska gimnazija"
+        },
+        {
+          "ime": "Pera",
+          "prezime": "Peric",
+          "mail": "pp@gmail.com",
+          "skola": "IX beogradska gimnazija"
+        }
+      ],
+      "omiljeneTehnologije": ["React", "Node.js"]
+    },
+    {
+      "ime": "Programeri",
+      "clanovi": [
+        {
+          "ime": "Zika",
+          "prezime": "Zikic",
+          "mail": "zz@gmail.com",
+          "skola": "V beogradska gimnazija"
+        },
+        {
+          "ime": "Anja",
+          "prezime": "Anjic",
+          "mail": "aa@gmail.com",
+          "skola": "V beogradska gimnazija"
+        }
+      ],
+      "omiljeneTehnologije": ["PHP", "Bootstrap"]
+    }
+  ]
+}

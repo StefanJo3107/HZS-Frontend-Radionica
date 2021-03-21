@@ -1,0 +1,11 @@
+{
+  "ime": "Pera",
+  "prezime": "Peric",
+  "godine": 23,
+  "student": true,
+  "interesovanja": ["programiranje", "dizajn"],
+  "skola": {
+    "ime": "zemunska gimnazija",
+    "adresa": "blabla"
+  }
+}

@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@600;800&display=swap");
+
+html {
+    /* varijable za boje */
+    --bg-color: #161616;
+    --accent-color: #00ffa3;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Khula", sans-serif;
+    margin: 0;
+}
+
+/*---------- Prikaz timova --------------*/
+
+.header-container {
+    /* flexbox objasnjen: https://www.w3schools.com/css/css3_flexbox.asp */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+}
+
+.title-container {
+    display: flex;
+}
+
+.title {
+    margin: 0;
+}
+
+.logo,
+.logo-link {
+    height: 30px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    vertical-align: sub;
+
+    /* tranzicija promene boje pri prevlacenju misa preko linka */
+    transition: color 0.25s ease;
+}
+
+/* hover: dogadjaj koji se trigeruje kada korisnik postavi mis preko elementa */
+.navlink:hover {
+    color: gray;
+    border-bottom: 4px solid gray;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-bar {
+    width: 200px;
+    background-color: var(--accent-color);
+    border: 2px solid var(--bg-color);
+    border-radius: 20px;
+    padding: 0 10px;
+
+    outline: none;
+}
+
+.search-button {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    margin-left: -35px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.card-container {
+    flex: 0 0 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border-top: 8px solid var(--accent-color);
+    border-bottom: 8px solid var(--accent-color);
+
+    /* tranzicija za pomeranje elementa navise */
+    transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+    /* pomeranje elementa 10px navise */
+    transform: translateY(-10px);
+}
+
+.user-icon {
+    width: 200px;
+}
+
+.user-info > * {
+    margin: 0;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.user-button {
+    width: 60%;
+    height: 40px;
+
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: 2px solid var(--bg-color);
+    outline: none;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    /* tranzicija svih parametara koji se menjaju */
+    transition: all 0.25s ease;
+}
+
+.user-button:hover {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.delete-button {
+    height: 40px;
+    width: 40px;
+    background-color: tomato;
+    border-radius: 20%;
+    border: none;
+    outline: none;
+
+    position: absolute;
+    margin-top: -350px;
+
+    transition: all 0.25s ease;
+}
+
+.delete-button:hover {
+    background-color: red;
+}
+/* ----------------------------------------------------*/
+
+/*-------------- Dodaj tim ------------------------*/
+.form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+
+    border-radius: 20px;
+    border-top: 8px solid var(--accent-color);
+    border-bottom: 8px solid var(--accent-color);
+
+    padding: 20px;
+}
+
+.form-title {
+    margin: 0;
+}
+
+.form-categ {
+    margin: 0;
+}
+
+.add-input {
+    width: 100%;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+}
+
+.add-button {
+    display: block;
+    width: 60%;
+    height: 40px;
+
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: 2px solid var(--bg-color);
+    outline: none;
+
+    font-weight: bold;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    /* tranzicija svih parametara koji se menjaju */
+    transition: all 0.25s ease;
+}
+
+.add-button:hover {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.valid-error {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+.hidden {
+    font-size: 0px !important;
+}
+
+/*------------------------------------------*/
+
+/*----------------Tim-------------------*/
+
+.tim {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+
+    border-radius: 20px;
+    border-top: 8px solid var(--accent-color);
+    border-bottom: 8px solid var(--accent-color);
+
+    padding: 20px;
+}
+
+.tim-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.ime-title {
+    margin: 0;
+}
+
+.delete-tim-button {
+    height: 40px;
+    width: 40px;
+    background-color: tomato;
+    border-radius: 20%;
+    border: none;
+    outline: none;
+
+    margin-bottom: 5px;
+
+    transition: all 0.25s ease;
+}
+
+.delete-tim-button:hover {
+    background-color: red;
+}
+
+.tehnologije-text {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ul element koji je child elementa klase .tehnologije-text */
+.tehnologije-text > ul {
+    margin: 0;
+}
+
+.clanovi-text {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.clanovi-text > ul {
+    margin: 0;
+}
